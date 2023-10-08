@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #000;
+}
+#top-menu{
+    padding: 10px;
+    background-color: #272727;
+    z-index: 200;
+    position: absolute;
+    width: 100%;
+}
+#box{
+    text-align: center ;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 900;
+}
+
+
+#menu-open{
+    float: right;
+    color: #f2f2f2;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 25px;
+}
+#menu-close{
+    float: right;
+    color: #f2f2f2;
+    position: absolute;
+    top: 170px;
+    right: 50px;
+    font-size: 25px;
+    display: none;
+}
+#menu{
+    display: none;
+    margin-top: 20px;
+}
+.menu-part{
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
+    color: #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 50px;
+    vertical-align: top;
+}
+.menu-part h3{
+    font-size: 30px;
+}
+.menu-part li{
+    list-style-type: none;
+}
+.menu-part a{
+    color: #fff;
+    text-decoration: none;
+}
+.menu-part a:hover{
+    text-decoration: underline;
+}
+.logoanimleft{
+    animation: EMITLogo 1s ease-in-out forwards;
+    text-align: left;
+}
+.logoanimright{
+    animation: EMITLogo2 1s ease-in-out forwards;
+    text-align: left;
+}
+.arrowanimdown{
+    animation: arrowAnim 1s ease-in-out forwards;
+}
+.animatedMenu{
+    animation: menuAnim .5s ease-in-out forwards;
+}
+.animatedMenuOut{
+    animation: menuOut .5s ease-in-out forwards;
+}
+#nasa{
+    opacity: 0;
+    max-width: 7%;
+    right: 80px;
+    top: 140px;
+    position: absolute;
+}
+.nasaAnim{
+    animation: nasa 1s ease-in-out forwards;
+}
+#emitimg{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    margin-top: 50px;
+    border-radius: 2000px;
+    margin-top: 100px;
+}
+#headerText{
+    position: absolute;
+    top: 100px;
+    color: #f2f2f2;
+    text-shadow: 1px 1px #f2f2f2;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 300px;
+    font-size: 90px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 900;
+    background-image: url(images/emit3.png); 
+            background-repeat: repeat; 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            -webkit-font-smoothing: antialiased;
+    animation: aboutAnim 1s ease-in-out forwards;
+
+}
+#bgvideo{
+    width: 100%;
+    max-height: 100%;
+}
+
+#operation1{
+    text-align: justify;
+    float: left;
+    position: absolute;
+    top: 270px;
+    animation: operationAnim1 2s ease-in-out forwards;
+}
+#operation1 img{
+    max-width: 26%;
+    display: inline-block;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+#operation1 p{
+    max-width: 50%;
+    display: inline-block;
+    margin-left: 30px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #f2f2f2;
+    vertical-align: top;
+    font-size: 18px;
+}
+#operation2{
+    text-align: justify;
+    margin-top: 50px;
+    float: right;
+    position: absolute;
+    top: 470px;
+    animation: operationAnim2 2s ease-in-out forwards;
+
+}
+#operation2 img{
+    max-width: 21%;
+    display: inline-block;
+    margin-right: 30px;
+    border-radius: 3px;
+    float: right;
+}
+#operation2 p{
+    max-width: 50%;
+    display: inline-block;
+    margin-left: 360px;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #f2f2f2;
+    vertical-align: top;
+    font-size: 18px;
+}
+#operationVideo{
+    margin-top: 100px;
+}
+#operationVideo video{
+    max-width: 30%;
+}
+#operationVideo p{
+
+}
+#bgvideo2{
+    width: 100%;
+    max-height: 100%
+}
+#aimText{
+    color: #f2f2f2;
+    font-family: 'Poppins',sans-serif;
+    position: absolute;
+    top: 300px;
+}
+#aimText p{
+    display: inline-block;
+    margin-left: 40px;
+    max-width: 70%;
+    vertical-align: top;
+    animation: paragraphAnim 1s ease-in-out forwards;
+
+}
+#earthImg{
+    display: inline-block;
+    max-width: 26%;
+    vertical-align: top;
+    animation: earthAnim 1s ease-in-out forwards;
+    animation: earthAnim2 5s ease-in-out forwards infinite;
+}
+@keyframes EMITLogo{
+    0%{transform: translateX(0);  text-align: center;}
+    100%{transform: translateX(-500px); text-align: center;}
+}
+@keyframes EMITLogo2{
+    0%{transform: translateX(-500px);  text-align: center;}
+    100%{transform: translateX(0); text-align: center;}
+}
+@keyframes arrowAnim{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-100%); transform: scaleY();}
+}
+@keyframes menuAnim{
+    0%{transform: translateY(-500px);}
+    100%{transform: translateY(0);}
+}
+@keyframes menuOut{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-500px);}
+}
+@keyframes nasa{
+    0%{opacity: 0;}
+    100%{opacity: 100%;}
+}
+@keyframes aboutAnim{
+    0%{top: 300px; font-size: 70px;}
+    100%{top: 140px; font-size: 50px;}
+
+}
+@keyframes operationAnim1{
+    0%{transform: translateX(1500px);}
+    100%{transform: translateX(0);}
+}
+@keyframes operationAnim2{
+    0%{transform: translateX(-1500px);}
+    100%{transform: translateX(0);}
+}
+@keyframes earthAnim{
+    0%{
+        transform: translateX(1500px);
+    }
+    100%{
+        transform: translateX(0px);
+        transform: rotate(180deg);
+    }
+}
+@keyframes earthAnim2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes paragraphAnim{
+    0%{transform: translateX(-1500px);}
+    100%{transform: translateX(0px);}
+}
